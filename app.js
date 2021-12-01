@@ -38,9 +38,9 @@ buttonOne.addEventListener('click', () => {
         wins++;
         cupOne.src = './assets/correct-cup.png';
     } else if (randomCup === 1) {
-        cupTwo.src = './assets/cup.png';
+        cupTwo.src = './assets/correct-cup.png';
     } else if (randomCup === 2) {
-        cupThree.src = './assets/cup.png';
+        cupThree.src = './assets/correct-cup.png';
     }
     totalGames++;
     console.log(randomCup);
@@ -52,12 +52,12 @@ buttonTwo.addEventListener('click', () => {
 
     const randomCup = Math.floor(Math.random() * 3);
     if (randomCup === 0) {
-        cupOne.src = './assets/cup.png';
+        cupOne.src = './assets/correct-cup.png';
     } else if (randomCup === 1) {
         wins++;
         cupTwo.src = './assets/correct-cup.png';
     } else if (randomCup === 2) {
-        cupThree.src = './assets/cup.png';
+        cupThree.src = './assets/correct-cup.png';
     }
 
     totalGames++;
@@ -70,9 +70,9 @@ buttonThree.addEventListener('click', () => {
 
     const randomCup = Math.floor(Math.random() * 3);
     if (randomCup === 0) {
-        cupOne.src = './assets/cup.png';
+        cupOne.src = './assets/correct-cup.png';
     } else if (randomCup === 1) {
-        cupTwo.src = './assets/cup.png';
+        cupTwo.src = './assets/correct-cup.png';
     } else if (randomCup === 2) {
         wins++;
         cupThree.src = './assets/correct-cup.png';
