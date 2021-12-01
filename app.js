@@ -29,22 +29,42 @@ let wins = 0;
 let losses = 0;
 let totalGames = 0;
 
+const hidingPlaces = [
+    'cupOne',
+    'cupTwo',
+    'cupThree'
+]
+
+function getRandomItem(arr) {
+  const index = Math.floor(Math.random() * arr.length);
+  
+  return arr[index]
+}
+
+function handleGuess(userGuess, correctSpot) {
+ reset();
+ totalGames++;
+console.log(userGuess, correctSpot);
+
+}
+
 // set event listeners 
 buttonOne.addEventListener('click', () => {
-    reset();
+    const randomCup = getRandomItem(hidingPlaces);
+    handleGuess('cupOne, randomCup');
 
-    const randomCup = Math.floor(Math.random() * 3);
-    if (randomCup === 0) {
-        wins++;
-        cupOne.src = './assets/correct-cup.png';
-    } else if (randomCup === 1) {
-        cupTwo.src = './assets/correct-cup.png';
-    } else if (randomCup === 2) {
-        cupThree.src = './assets/correct-cup.png';
-    }
-    totalGames++;
-    console.log(randomCup);
-    displayCount();
+    // const randomCup = Math.floor(Math.random() * 3);
+    // if (randomCup === 0) {
+    //     wins++;
+    //     cupOne.src = './assets/correct-cup.png';
+    // } else if (randomCup === 1) {
+    //     cupTwo.src = './assets/correct-cup.png';
+    // } else if (randomCup === 2) {
+    //     cupThree.src = './assets/correct-cup.png';
+    // }
+    // totalGames++;
+    // console.log(randomCup);
+    // displayCount();
 });
 
 buttonTwo.addEventListener('click', () => {
