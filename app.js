@@ -26,7 +26,7 @@ function displayCount() {
 
 // let state
 let wins = 0;
-let losses = 0;
+// let losses = 0;
 let totalGames = 0;
 
 const hidingPlaces = [
@@ -54,9 +54,7 @@ function handleGuess(userGuess, correctSpot) {
         wins++;
     }
     //update the dom to reflect the changes in state
-    correctEl.textContent = wins;
-    incorrectEl.textContent = totalGames - wins;
-    totalEl.textContent = totalGames;
+    displayCount();
 
 }
 
@@ -93,9 +91,9 @@ buttonTwo.addEventListener('click', () => {
     //     cupThree.src = './assets/correct-cup.png';
     // }
 
-    totalGames++;
+    // totalGames++;
 
-    displayCount();
+    // displayCount();
 });
 
 buttonThree.addEventListener('click', () => {
@@ -112,9 +110,9 @@ buttonThree.addEventListener('click', () => {
     //   cupThree.src = './assets/correct-cup.png';
     //}
 
-    totalGames++;
+    // totalGames++;
 
-    displayCount();
+    // displayCount();
 });
 
   // get user input
