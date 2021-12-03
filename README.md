@@ -11,7 +11,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
     1.three divs for cup images containers
       2.two cup images, one standard, one revealing ball
-    3.three divs for "guess" buttons"
+    3.three divs for "guess" buttons
     4. Three spans for total guesses, correct guesses, and incorrect guesses.
 
 1) **For each HTML element ask: Why do I need this?** 
